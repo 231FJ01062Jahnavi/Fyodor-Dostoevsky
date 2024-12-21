@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyodor Dostoevsky: A Timeless Legacy</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f5f2;
+            color: #2c2c2c;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background-color: #4a2e19;
+            color: #f1e3d3;
+            padding: 40px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            animation: fadeInDown 2s;
+        }
+
+        header p {
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 1.5rem;
+            animation: fadeIn 3s;
+        }
+
+        .quote {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            font-style: italic;
+            color: #f1e3d3;
+            animation: fadeIn 3.5s;
+        }
+
+        /* Section Styling */
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section img:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #4a2e19;
+        }
+
+        .impact {
+            background-color: #f4ebdc;
+            border-left: 8px solid #4a2e19;
+            padding: 20px;
+            margin-top: 20px;
+            font-style: italic;
+            animation: fadeIn 2s;
+        }
+
+        /* Books Grid */
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .book {
+            text-align: center;
+            background-color: #f1e3d3;
+            border: 1px solid #d4b79b;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .book:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .book img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .book span {
+            font-weight: bold;
+            color: #4a2e19;
+        }
+
+        .book a {
+            color: #4a2e19;
+            text-decoration: none;
+        }
+
+        .book a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4a2e19;
+            color: #f1e3d3;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #f1e3d3;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #d4b79b;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fyodor Dostoevsky</h1>
+        <p>A Mastermind of Psychological and Philosophical Literature</p>
+        <div class="quote">"The mystery of human existence lies not in just staying alive, but in finding something to live for."</div>
+    </header>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Fyodor Dostoevsky</h2>
+            <img src="FD.jpg" alt="Fyodor Dostoevsky">
+            <p>Fyodor Dostoevsky (1821–1881) was one of Russia's most celebrated authors, known for his profound explorations of human nature, morality, and existential crises. His novels reflect the tumultuous political and social changes of 19th-century Russia, delving into themes of faith, suffering, and redemption.</p>
+            <p>Despite his hardships—including exile in Siberia, epilepsy, and financial struggles—Dostoevsky's works remain a testament to resilience and the power of storytelling.</p>
+        </section>
+
+        <section id="works" class="section">
+            <h2>Major Works</h2>
+            <div class="books-grid">
+                <div class="book">
+                    <img src="C&P.jpg" alt="Crime and Punishment">
+                    <span><a href="https://en.wikipedia.org/wiki/Crime_and_Punishment" target="_blank">Crime and Punishment (1866)</a></span>
+                </div>
+                <div class="book">
+                    <img src="IDIOT.jpg" alt="The Idiot">
+                    <span><a href="https://en.wikipedia.org/wiki/The_Idiot" target="_blank">The Idiot (1869)</a></span>
+                </div>
+                <div class="book">
+                    <img src="TBK.webp" alt="The Brothers Karamazov">
+                    <span><a href="https://en.wikipedia.org/wiki/The_Brothers_Karamazov" target="_blank">The Brothers Karamazov (1880)</a></span>
+                </div>
+                <div class="book">
+                    <img src="DEMONS.jpg" alt="Demons">
+                    <span><a href="https://en.wikipedia.org/wiki/Demons_(Dostoevsky_novel)" target="_blank">Demons (1872)</a></span>
+                </div>
+                <div class="book">
+                    <img src="NFUG.jpg" alt="Notes from Underground">
+                    <span><a href="https://en.wikipedia.org/wiki/Notes_from_Underground" target="_blank">Notes from Underground (1864)</a></span>
+                </div>
+                <div class="book">
+                    <img src="PF.jpg" alt="Poor Folk">
+                    <span><a href="https://en.wikipedia.org/wiki/Poor_Folk" target="_blank">Poor Folk (1846)</a></span>
+                </div>
+                <div class="book">
+                    <img src="TG.jpg" alt="The Gambler">
+                    <span><a href="https://en.wikipedia.org/wiki/The_Gambler_(novel)" target="_blank">The Gambler (1867)</a></span>
+                </div>
+                <div class="book">
+                    <img src="ETH.jpg" alt="The Eternal Husband">
+                    <span><a href="https://en.wikipedia.org/wiki/The_Eternal_Husband" target="_blank">The Eternal Husband (1870)</a></span>
+                </div>
+                <div class="book">
+                    <img src="WN.jpg" alt="White Nights">
+                    <span><a href="https://en.wikipedia.org/wiki/White_Nights" target="_blank">White Nights (1848)</a></span>
+                </div>
+                <div class="book">
+                    <img src="AGC.jpg" alt="A Gentle Creature">
+                    <span><a href="https://en.wikipedia.org/wiki/A_Gentle_Creature" target="_blank">A Gentle Creature (1876)</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="section">
+            <h2>The Impact of Dostoevsky’s Works</h2>
+            <div class="impact">
+                <p>Dostoevsky's novels shaped modern psychology, literature, and philosophy. Sigmund Freud hailed him as a literary genius whose works anticipate psychoanalysis. Nietzsche admired Dostoevsky's existential themes, and his characters inspired countless writers, including Franz Kafka and Albert Camus.</p>
+                <p>Works like <strong>"Crime and Punishment"</strong> challenge readers to grapple with moral ambiguity, while <strong>"The Brothers Karamazov"</strong> explores faith, doubt, and family dynamics with unparalleled depth.</p>
+            </div>
+        </section>
+
+        <section id="wiki-links" class="section">
+            <h2>Explore Dostoevsky’s Complete Works</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Crime_and_Punishment" target="_blank">Crime and Punishment (1866)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Idiot" target="_blank">The Idiot (1869)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Brothers_Karamazov" target="_blank">The Brothers Karamazov (1880)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Demons_(Dostoevsky_novel)" target="_blank">Demons (1872)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Notes_from_Underground" target="_blank">Notes from Underground (1864)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Poor_Folk" target="_blank">Poor Folk (1846)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Gambler_(novel)" target="_blank">The Gambler (1867)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Eternal_Husband" target="_blank">The Eternal Husband (1870)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/White_Nights" target="_blank">White Nights (1848)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/A_Gentle_Creature" target="_blank">A Gentle Creature (1876)</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fyodor Dostoevsky Tribute | <a href="#about">Back to top</a></p>
+    </footer>
+</body>
+</html>
+
+
+
+
